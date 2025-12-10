@@ -22,13 +22,4 @@ Launch App: streamlit run app.py.
 "We are processing Visual and Audio signals simultaneously to triage rescue missions."
 You are going to crush this hackathon. Good luck, and go build the future! 🚀
 
-docker run -d --rm --name =resq-ears \
--e NGC_API_KEY=$NGC_API_KEY \
--p 9000:8000
-nvcr.io/nim/nvidia/parakeet-ctc-1.1b-asr:latest
-docker: 'docker run' requires at least 1 argument
-
-Usage:  docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
-
-See 'docker run --help' for more information
-bash: nvcr.io/nim/nvidia/parakeet-ctc-1.1b-asr:latest: No such file or directory
+docker run -d --rm --name=resq-ears --runtime=nvidia --gpus all -e NGC_API_KEY=$NGC_API_KEY -p 9000:8000 nvcr.io/nim/nvidia/parakeet-ctc-1.1b-asr:latest
