@@ -14,4 +14,4 @@ Assets: flood_image.jpg and radio_signal.mp3.3. The Pitch (Key Sentences)
 You are going to crush this hackathon. Good luck, and go build the future! 🚀
 
 
-sudo docker run -it –rm –name =resq-ears –runtime=nvidia –gpus all -e NGC_API_KEY=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  -p 9000:8000 nvcr.io/nim/nvidia/parakeet-ctc-1.1b-asr:latest
+sudo docker run -it --rm --name=resq-ears --runtime=nvidia --gpus all -e NGC_API_KEY=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 -p 9000:8000 nvcr.io/nim/nvidia/parakeet-ctc-1.1b-asr:latest
